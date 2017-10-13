@@ -27,6 +27,7 @@ import java.awt.Font;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Insets;
+import java.util.function.Consumer;
 
 /**
  * Panel whose controls are layed out in a GridBagLayout having 2 columns:
@@ -83,6 +84,29 @@ public class LabeledInputPanel extends JPanel {
         add(
                 inputComponent,
                 inputConstraints
+        );
+    }
+
+
+    /**
+     * Adds the given input component to the dialog, altering a <i>clone</i>
+     * of the internal constraints.
+     *
+     * @param inputComponent           The component to add
+     * @param constraintsCloneConsumer The consumer used to alter the clone of the constraints
+     */
+    public void addInput(
+            JComponent inputComponent,
+            Consumer<GridBagConstraints> constraintsCloneConsumer
+    ) {
+        GridBagConstraints customConstraints =
+                (GridBagConstraints) inputConstraints.clone();
+
+        constraintsCloneConsumer.accept(customConstraints);
+
+        add(
+                inputComponent,
+                customConstraints
         );
     }
 }

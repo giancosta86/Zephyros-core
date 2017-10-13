@@ -47,7 +47,7 @@ apply plugin: 'info.gianlucacosta.aurora'
 
 group 'info.gianlucacosta.zephyros'
 archivesBaseName = 'zephyros-core'
-version '1.0'
+version '1.1'
 
 description = 'Core utilities for modern Java'
 
