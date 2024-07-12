@@ -1,7 +1,6 @@
 # Zephiros - Core
 
-*Core utilities for modern Java*
-
+_Core utilities for modern Java_
 
 ## Introduction
 
@@ -9,12 +8,9 @@
 
 For details, please refer to its Javadoc documentation.
 
-
-
 ## Requirements
 
 Java 8u144 or later is recommended to employ the library.
-
 
 ## Referencing the library
 
@@ -22,11 +18,6 @@ Zephyros-core is available on [Hephaestus](https://bintray.com/giancosta86/Hepha
 
 Alternatively, you could download the JAR file from Hephaestus and manually add it to your project structure.
 
-
-
-
 ## Further references
 
-* [Zephyros](https://github.com/giancosta86/Zephyros)
-
-* [Hephaestus - Facebook page](https://www.facebook.com/hephaestus.repository/)
+- [Zephyros](https://github.com/giancosta86/Zephyros)
